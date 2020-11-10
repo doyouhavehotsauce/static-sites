@@ -1,0 +1,204 @@
+/* Color Theme Swatches in Hex */
+.Bakery-1-hex { color: #873937; }
+.Bakery-2-hex { color: #FFFFF0; }
+.Bakery-3-hex { color: #FF908E; }
+.Bakery-4-hex { color: #213747; }
+.Bakery-5-hex { color: #6FA3C9; }
+
+/* Color Theme Swatches in RGBA */
+.Bakery-1-rgba { color: rgba(135, 56, 54, 1); }
+.Bakery-2-rgba { color: rgba(254, 255, 239, 1); }
+.Bakery-3-rgba { color: rgba(255, 144, 142, 1); }
+.Bakery-4-rgba { color: rgba(33, 54, 70, 1); }
+.Bakery-5-rgba { color: rgba(110, 163, 200, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Bakery-1-hsla { color: hsla(1, 42, 37, 1); }
+.Bakery-2-hsla { color: hsla(60, 100, 97, 1); }
+.Bakery-3-hsla { color: hsla(1, 100, 77, 1); }
+.Bakery-4-hsla { color: hsla(205, 36, 20, 1); }
+.Bakery-5-hsla { color: hsla(205, 45, 61, 1); }
+
+:root{
+    --dark-blue: #213747;
+    --turquoise: #6FA3C9;
+    --white: #FFFFF0;
+    --pink: #FF908E;
+}
+
+/* padding & margin classes */
+.p-20{
+    padding:20px;
+}
+.p-tb-100{
+    padding:100px 0;
+}
+
+
+
+
+#wrapper{
+    background:;
+}
+.nav{
+    background: var(--turquoise);
+    font-size: 1.5em;
+    height: 75px;
+    align-items: center;
+}
+.nav-link{
+    color: var(--white);
+}
+.nav-link:hover{
+    color: var(--dark-blue);
+}
+
+.grid-container{
+	display: flex;
+}
+.parallax-hero{
+	width: 60%;
+}
+.location-container{
+	width: 40%;
+}
+.hours{
+	border: 1px solid orange;
+}
+.location-map{
+	height: 275px;
+}
+
+
+
+
+
+.content-blurb{
+    clip-path:polygon(0 0, 65% 0, 100% 100%, 35% 100%);
+}
+
+
+.r-shape:after{
+    clear:both;
+    display:table;
+    content: " ";
+}
+
+.hero-paragraph{
+    padding: 100px 0;
+    background: var(--pink); 
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* card section */
+.recipe-card-wrap{
+
+}
+.recipe-header{
+    background-image: url('.././assets/doughnut-bg.jpeg');
+    background-repeat: no-repeat;
+    background-position: 5% 5%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--dark-blue);
+    margin-bottom: 20px;
+}
+.recipe-header h2{
+    font-size: 3em;
+}
+.card{
+    border: 1px solid #cecece;
+    border-radius: 8px;
+    padding: 10px;
+}
+.card a{
+    padding: 0 20px;
+    font-size: 1.25em;
+    text-decoration: none;
+    border: 2px solid var(--turquoise);
+    color: var(--turquoise);
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 5px;
+    width: 30%;
+    text-align: center;
+    transition: all .5ms ease-in-out;
+}
+.card a:hover{
+    background: var(--turquoise);
+    color: var(--pink);
+}
+.recipes{
+    background: url('./assets/fruit-tart.jpeg');
+    background-size:cover;
+    color: var(--dark-blue);
+    
+}
+.special{
+    background: url('./assets/3cupcakes.jpeg');
+        background-size:cover;
+        color: var(--dark-blue);
+        
+
+}
+.menu{
+    background: url('./assets/pink-cupcake-frosting.jpeg');
+    background-size:cover;
+    color: var(--dark-blue);
+    
+
+}
+.image{
+    background: url('./assets/fruit-tart.jpeg');
+    background-size:cover;
+    color: var(--dark-blue);
+    
+
+}
+
+
+/* footer */
+footer{
+    padding: 40px;
+    background: #333;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-wrap{
+    display: flex;
+}
+.social-icons{
+    height: 44px;
+    width: 44px;
+}
+.social-icons:nth-child(2){
+    margin: 0 10px
+}
+#facebook-icon{
+    background-repeat:no-repeat;
+    background: url('./assets/facebook.svg')
+}
+#facebook-icon:hover{
+    background: url('./assets/facebook-hover.svg')
+}
+#pinterest-icon{
+    background-repeat:no-repeat;
+    background: url('./assets/pinterest.svg')
+}
+#pinterest-icon:hover{
+    background: url('./assets/pinterest-hover.svg')
+}
+#instagram-icon{
+    background-repeat:no-repeat;
+    background: url('./assets/instagram.svg')
+}
+#instagram-icon:hover{
+    background: url('./assets/instagram-hover.svg')
+}
