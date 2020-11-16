@@ -10,17 +10,30 @@
       <title>Cupcake Factory</title>
    </head>
    <body>
-         <nav class="nav ">
+         <!-- <nav class="nav ">
             <a class="nav-link" href="./index.html">Logo</a>
             <a class="nav-link active" href="./index.html">Home</a>
             <a class="nav-link" href="./history.html">History</a>
             <a class="nav-link" href="./recipes.html">Recipes</a>
-            <a class="nav-link" href="./locations.html">Locations</a>
-         </nav>
-         <div class="wrapper-body container">
+         </nav> -->
+         <div id="mobile-nav-wrap">
+            <div class="nav-hamburger">&times;</div>
+            <nav class="nav-mobile">
+                <ul>
+                    <li><a class="nav-link" href="./index.html">Logo</a></li>
+                    <li><a class="nav-link active" href="./index.html">Home</a></li>
+                    <li><a class="nav-link" href="./history.html">History</a></li>
+                    <li><a class="nav-link" href="./recipes.html">Recipes</a></li>
+                </ul>              
+             </nav>
+         </div>
+
+         <div class="wrapper-body">
+             <div id="menu-toggle"><a id="show-menu">Menu</a></div>
+
             <article class="row">
-               <div class="eight columns">
-                <img src="./assets/macaroon-stack.jpeg" alt="" style="height:500px;">
+               <div class="eight columns" style="background: #c3c3c3; height: 600px;">
+                <div>Gallery thing</div>
                 </div>
                <div class="four columns">
                   <div class="">
@@ -40,9 +53,9 @@
                   </div>
                </div>
             </article>
-         </div>
-         <article class="row">
-             <div class="six columns"> 
+         
+            <article class="row">
+             <div class="twelve columns m-100"> 
                 <h3>Here's a little story all about how</h3>
                 <p>My life got fingerstache dreamcatcher pug vaporware meditation readymade cardigan kitsch YOLO freegan 
                     taiyaki mumblecore tbh waistcoat narwhal. Marfa enamel pin ramps, vinyl forage YOLO everyday carry 
@@ -64,56 +77,55 @@
                 </p>
              </div>
          </article>
-         <div class=" container-fluid">
-            <article class="row p-tb-100">
-                <div class="col-sm-1 col-md-6 col-lg-3">
-                    <a href="">
-                        <div class="card recipes">
-                            <h3>Recipes</h3>
-                        </div>
-                    </a>
-
+            <article class="row">
+                <div class="four columns recipe-card">              
+                    <div class="recipes">
+                        <h3>Recipes</h3>
+                    </div>
                 </div>
-                <div class="col-sm-1 col-md-6 col-lg-3">
-                    <a href="">
-                        <div class="card special">
-                            <h3>Special Order</h3>
-                        </div>
-                    </a>
-
+                <div class="four columns recipe-card">
+                    <div class="special">
+                        <h3>Special Order</h3>
+                    </div>  
                 </div>
-                <div class="col-sm-1 col-md-6 col-lg-3">
-                    <a href="">
-                        <div class="card menu">
-                            <h3>Menu</h3>
-                        </div>
-                    </a>
-
+                <div class="four columns recipe-card">                 
+                    <div class=" menu">
+                        <h3>Menu</h3>
+                    </div>
                 </div>
-                <div class="col-sm-1 col-md-6 col-lg-3">
-                    <a href="">
-                        <div class="card image">
-                            <h3>img</h3>
-                        </div>
-                    </a>
 
-                </div>
             </article>
 
-         </div>
+        </div>
+
+
          <footer>
              <div class="social-wrap">
                  <div class="social-icons" id="facebook-icon"></div>
                  <div class="social-icons" id="pinterest-icon"></div>
                  <div class="social-icons" id="instagram-icon"></div>
              </div>
-             <div>
-                 <form action="">
-                     <label for="email-signup">stay in touch</label>
-                    <input type="text" placeholder="Email" name="email-signup">
-                    <button type="submit">signup</button>
-                 </form>
-             </div>
+
+                <form class="email-signup">
+                    <div class="row">
+                      <div class="six columns">
+                        <label for="exampleEmailInput">First Name</label>
+                        <input class="u-full-width" type="text" placeholder="" id="">
+                      </div>
+                      <div class="six columns">
+                        <label for="exampleRecipientInput">Last Name</label>
+                        <input class="u-full-width" type="text" placeholder="" id="">
+                      </div>
+                      <div class="twelve columns">
+                        <label for="exampleMessage">Email</label>
+
+                        <input class="u-full-width" type="text" placeholder="test@mailbox.com" id="">
+
+                      </div>
+                      <input class="button-primary" type="submit" value="Submit">
+
+                    </div>
+                  </form>
 
 
          </footer>

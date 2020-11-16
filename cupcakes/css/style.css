@@ -33,12 +33,17 @@
 .p-tb-100{
     padding:100px 0;
 }
+.m-100{
+    margin: 200px 0;
+}
 
 
 
+.wrapper-body{
 
-#wrapper{
-    background:;
+}
+.row{
+    padding: 20px;  
 }
 .nav{
     background: var(--turquoise);
@@ -46,6 +51,84 @@
     height: 75px;
     align-items: center;
 }
+#mobile-nav-wrap{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--turquoise);
+    overflow-x: hidden;
+    transition: 0.5s;
+    
+}
+.nav-mobile-wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+.nav-mobile{
+    position: relative;
+    float: left;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+.nav-mobile ul{
+    padding-top: 100px;
+}
+.nav-mobile ul li{
+    font-size: 2.25em;
+    list-style: none;
+    padding-left: 50px;
+}
+/* .nav-mobile::after{
+    clear: both;
+    display: table;
+    content: ' ';
+
+} */
+.nav-hamburger{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 3em;
+    color: var(--white);
+    transition: color 0.25s ease-in-out
+}
+.nav-hamburger:hover{
+    color: var(--dark-blue);
+}
+#menu-toggle{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: var(--turquoise);
+    height: 50px;
+    width: 75px;
+    cursor:pointer;
+}
+#menu-toggle a{
+    color: var(--white);
+}
+/* .nav-hamburger{
+    background: var(--turquoise);
+    position: relative;
+}
+.nav-hamburger::after{
+    content: "\00D7";
+    font-size: 24px;
+    line-height: 0.65;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: green;
+} */
 .nav-link{
     color: var(--white);
 }
@@ -92,7 +175,14 @@
 }
 
 /* card section */
-.recipe-card-wrap{
+.recipe-card{
+    height: 300px;
+    border: 8px solid var(--pink);
+    cursor: pointer;
+    color: black;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--dark-blue);
 
 }
 .recipe-header{
@@ -110,6 +200,48 @@
 }
 .recipe-header h2{
     font-size: 3em;
+}
+.recipes{
+    background: url('.././assets/fruit-tart.jpeg');
+    background-size: 100% 100%;
+    background-position: center;
+    color: var(--dark-blue);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    transition: all .25s ease-in-out;
+}
+.recipes:hover{
+    background-size: 120% 120%;
+}
+.special{
+    background: url('.././assets/macaroon-stack.jpeg');
+    background-size: 100% 100%;
+    background-position: center;
+    color: var(--dark-blue);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .25s ease-in-out;
+}
+.special:hover{
+    background-size: 120% 120%;
+}
+.menu{
+    background: url('.././assets/pink-cupcake-frosting.jpeg');
+    background-size: 100% 100%;
+    background-position: center;
+    color: var(--dark-blue);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .25s ease-in-out;
+}
+.menu:hover{
+    background-size: 120% 120%;
 }
 .card{
     border: 1px solid #cecece;
@@ -133,38 +265,13 @@
     background: var(--turquoise);
     color: var(--pink);
 }
-.recipes{
-    background: url('./assets/fruit-tart.jpeg');
-    background-size:cover;
-    color: var(--dark-blue);
-    
-}
-.special{
-    background: url('./assets/3cupcakes.jpeg');
-        background-size:cover;
-        color: var(--dark-blue);
-        
 
-}
-.menu{
-    background: url('./assets/pink-cupcake-frosting.jpeg');
-    background-size:cover;
-    color: var(--dark-blue);
-    
 
-}
-.image{
-    background: url('./assets/fruit-tart.jpeg');
-    background-size:cover;
-    color: var(--dark-blue);
-    
-
-}
 
 
 /* footer */
 footer{
-    padding: 40px;
+    padding: 20px;
     background: #333;
     color: var(--white);
     display: flex;
@@ -173,32 +280,37 @@ footer{
 }
 .social-wrap{
     display: flex;
+    align-self: flex-start;
 }
 .social-icons{
     height: 44px;
     width: 44px;
+    cursor: pointer
 }
 .social-icons:nth-child(2){
     margin: 0 10px
 }
 #facebook-icon{
     background-repeat:no-repeat;
-    background: url('./assets/facebook.svg')
+    background: url('.././assets/facebook.svg')
 }
 #facebook-icon:hover{
-    background: url('./assets/facebook-hover.svg')
+    background: url('.././assets/facebook-hover.svg')
 }
 #pinterest-icon{
     background-repeat:no-repeat;
-    background: url('./assets/pinterest.svg')
+    background: url('.././assets/pinterest.svg')
 }
 #pinterest-icon:hover{
-    background: url('./assets/pinterest-hover.svg')
+    background: url('.././assets/pinterest-hover.svg')
 }
 #instagram-icon{
     background-repeat:no-repeat;
-    background: url('./assets/instagram.svg')
+    background: url('.././assets/instagram.svg')
 }
 #instagram-icon:hover{
-    background: url('./assets/instagram-hover.svg')
+    background: url('.././assets/instagram-hover.svg')
+}
+.email-signup{
+    max-width: 500px;
 }
