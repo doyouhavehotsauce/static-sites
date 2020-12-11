@@ -1,0 +1,322 @@
+/* Color Theme Swatches in Hex */
+.Bakery-1-hex { color: #873937; }
+.Bakery-2-hex { color: #FFFFF0; }
+.Bakery-3-hex { color: #FF908E; }
+.Bakery-4-hex { color: #213747; }
+.Bakery-5-hex { color: #6FA3C9; }
+
+/* Color Theme Swatches in RGBA */
+.Bakery-1-rgba { color: rgba(135, 56, 54, 1); }
+.Bakery-2-rgba { color: rgba(254, 255, 239, 1); }
+.Bakery-3-rgba { color: rgba(255, 144, 142, 1); }
+.Bakery-4-rgba { color: rgba(33, 54, 70, 1); }
+.Bakery-5-rgba { color: rgba(110, 163, 200, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Bakery-1-hsla { color: hsla(1, 42, 37, 1); }
+.Bakery-2-hsla { color: hsla(60, 100, 97, 1); }
+.Bakery-3-hsla { color: hsla(1, 100, 77, 1); }
+.Bakery-4-hsla { color: hsla(205, 36, 20, 1); }
+.Bakery-5-hsla { color: hsla(205, 45, 61, 1); }
+
+:root{
+    --dark-blue: #213747;
+    --turquoise: #6FA3C9;
+    --white: #FFFFF0;
+    --pink: #FF908E;
+}
+
+/* padding & margin classes */
+.p-20{
+    padding:20px;
+}
+.p-tb-100{
+    padding:100px 0;
+}
+.m-100{
+    margin: 200px 0;
+}
+
+
+
+input{
+    color: #333;
+}
+
+
+
+.wrapper-body{
+
+}
+.row{
+    padding: 20px;  
+}
+.nav{
+    background: var(--turquoise);
+    font-size: 1.5em;
+    height: 75px;
+    align-items: center;
+}
+#mobile-nav-wrap{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--turquoise);
+    overflow-x: hidden;
+    transition: 0.5s;
+    
+}
+.nav-mobile-wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+.nav-mobile{
+    position: relative;
+    float: left;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+.nav-mobile ul{
+    padding-top: 100px;
+}
+.nav-mobile ul li{
+    font-size: 2.25em;
+    list-style: none;
+    padding-left: 50px;
+}
+/* .nav-mobile::after{
+    clear: both;
+    display: table;
+    content: ' ';
+
+} */
+.nav-hamburger{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 3em;
+    color: var(--white);
+    transition: color 0.25s ease-in-out
+}
+.nav-hamburger:hover{
+    color: var(--dark-blue);
+}
+#menu-toggle{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: var(--turquoise);
+    height: 50px;
+    width: 75px;
+    cursor:pointer;
+}
+#menu-toggle a{
+    color: var(--white);
+}
+/* .nav-hamburger{
+    background: var(--turquoise);
+    position: relative;
+}
+.nav-hamburger::after{
+    content: "\00D7";
+    font-size: 24px;
+    line-height: 0.65;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: green;
+} */
+.nav-link{
+    color: var(--white);
+}
+.nav-link:hover{
+    color: var(--dark-blue);
+}
+
+.grid-container{
+	display: flex;
+}
+.parallax-hero{
+	width: 60%;
+}
+.location-container{
+	width: 40%;
+}
+.hours{
+	border: 1px solid orange;
+}
+.location-map{
+	height: 275px;
+}
+
+
+
+
+
+.content-blurb{
+    clip-path:polygon(0 0, 65% 0, 100% 100%, 35% 100%);
+}
+
+
+.r-shape:after{
+    clear:both;
+    display:table;
+    content: " ";
+}
+
+.hero-paragraph{
+    padding: 100px 0;
+    background: var(--pink); 
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* card section */
+.recipe-card{
+    height: 300px;
+    border: 8px solid var(--pink);
+    cursor: pointer;
+    color: black;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--dark-blue);
+
+}
+.recipe-header{
+    background-image: url('.././assets/doughnut-bg.jpeg');
+    background-repeat: no-repeat;
+    background-position: 5% 5%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--dark-blue);
+    margin-bottom: 20px;
+}
+.recipe-header h2{
+    font-size: 3em;
+}
+.recipes{
+    background: url('.././assets/fruit-tart.jpeg');
+    background-size: 100% 100%;
+    background-position: center;
+    color: var(--dark-blue);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    transition: all .25s ease-in-out;
+}
+.recipes:hover{
+    background-size: 120% 120%;
+}
+.special{
+    background: url('.././assets/macaroon-stack.jpeg');
+    background-size: 100% 100%;
+    background-position: center;
+    color: var(--dark-blue);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .25s ease-in-out;
+}
+.special:hover{
+    background-size: 120% 120%;
+}
+.menu{
+    background: url('.././assets/pink-cupcake-frosting.jpeg');
+    background-size: 100% 100%;
+    background-position: center;
+    color: var(--dark-blue);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .25s ease-in-out;
+}
+.menu:hover{
+    background-size: 120% 120%;
+}
+.card{
+    border: 1px solid #cecece;
+    border-radius: 8px;
+    padding: 10px;
+}
+.card a{
+    padding: 0 20px;
+    font-size: 1.25em;
+    text-decoration: none;
+    border: 2px solid var(--turquoise);
+    color: var(--turquoise);
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 5px;
+    width: 30%;
+    text-align: center;
+    transition: all .5ms ease-in-out;
+}
+.card a:hover{
+    background: var(--turquoise);
+    color: var(--pink);
+}
+
+
+
+
+/* footer */
+footer{
+    padding: 20px;
+    background: #333;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-wrap{
+    display: flex;
+    align-self: flex-start;
+}
+.social-icons{
+    height: 44px;
+    width: 44px;
+    cursor: pointer
+}
+.social-icons:nth-child(2){
+    margin: 0 10px
+}
+#facebook-icon{
+    background-repeat:no-repeat;
+    background: url('.././assets/facebook.svg')
+}
+#facebook-icon:hover{
+    background: url('.././assets/facebook-hover.svg')
+}
+#pinterest-icon{
+    background-repeat:no-repeat;
+    background: url('.././assets/pinterest.svg')
+}
+#pinterest-icon:hover{
+    background: url('.././assets/pinterest-hover.svg')
+}
+#instagram-icon{
+    background-repeat:no-repeat;
+    background: url('.././assets/instagram.svg')
+}
+#instagram-icon:hover{
+    background: url('.././assets/instagram-hover.svg')
+}
+.email-signup{
+    max-width: 500px;
+}
