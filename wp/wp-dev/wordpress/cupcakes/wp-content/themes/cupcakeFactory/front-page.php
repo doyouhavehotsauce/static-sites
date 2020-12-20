@@ -1,23 +1,8 @@
-
-
 <?php get_header(); ?>
-<?php get_admin_url() ?>
-<?php wp_body_open(); ?>
 
+<h1>I'm the Front page</h1>
 
-         <div id="mobile-nav-wrap">
-            <div class="nav-hamburger">&times;</div>
-            <nav class="nav-mobile">
-                <ul>
-                    <li><a class="nav-link" href="./index.html">Logo</a></li>
-                    <li><a class="nav-link active" href="./index.html">Home</a></li>
-                    <li><a class="nav-link" href="./history.html">History</a></li>
-                    <li><a class="nav-link" href="./recipes.html">Recipes</a></li>
-                </ul>              
-             </nav>
-         </div>
-         <div id="menu-toggle"><a id="show-menu">Menu</a></div>
-         <article class="">
+<article class="">
                <div class="" style="background: #c3c3c3; height: 600px;">
                 <div>Gallery thing</div>
                 </div>
@@ -124,4 +109,4 @@
 
             </footer>
 
-           <?php get_footer(); ?>
+<?php get_footer(); ?>

@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+document.addEventListener("DOMContentLoaded", function(){
 
     // Handler when the DOM is fully loaded
     console.log('hi');
@@ -23,9 +23,6 @@ $( document ).ready(function() {
 
 
 
-    $('#emailSignup').on('click', function(){
-        // alert('yes');
-    })
     // function menu(){
     //     const nav = document.getElementById('wrapper');
     

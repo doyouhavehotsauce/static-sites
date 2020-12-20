@@ -1,23 +1,17 @@
+/*
+Theme Name: CupcakeFactory
+Text Domain: CupcakeFactory
+Version: 1.0
+Description: Custom, mobile first
+Tags: responsive, custom
+Author: the Daring Rob
+*/
 /* Color Theme Swatches in Hex */
 .Bakery-1-hex { color: #873937; }
 .Bakery-2-hex { color: #FFFFF0; }
 .Bakery-3-hex { color: #FF908E; }
 .Bakery-4-hex { color: #213747; }
 .Bakery-5-hex { color: #6FA3C9; }
-
-/* Color Theme Swatches in RGBA */
-.Bakery-1-rgba { color: rgba(135, 56, 54, 1); }
-.Bakery-2-rgba { color: rgba(254, 255, 239, 1); }
-.Bakery-3-rgba { color: rgba(255, 144, 142, 1); }
-.Bakery-4-rgba { color: rgba(33, 54, 70, 1); }
-.Bakery-5-rgba { color: rgba(110, 163, 200, 1); }
-
-/* Color Theme Swatches in HSLA */
-.Bakery-1-hsla { color: hsla(1, 42, 37, 1); }
-.Bakery-2-hsla { color: hsla(60, 100, 97, 1); }
-.Bakery-3-hsla { color: hsla(1, 100, 77, 1); }
-.Bakery-4-hsla { color: hsla(205, 36, 20, 1); }
-.Bakery-5-hsla { color: hsla(205, 45, 61, 1); }
 
 :root{
     --dark-blue: #213747;
@@ -26,10 +20,67 @@
     --pink: #FF908E;
 }
 
-/* padding & margin classes */
-*{
-    box-sizing:border-box;
+h1, h2, h3, h4, h5{
+    font-family: 'Roboto', sans-serif;
+    color: tomato;
 }
+.nav{
+    background: var(--turquoise);
+    font-size: 1.5em;
+    height: 75px;
+    align-items: center;
+}
+#mobile-nav-wrap{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--turquoise);
+    overflow-x: hidden;
+    transition: 0.5s;
+    
+}
+.nav-hamburger{
+    color: var(--white);
+    cursor: pointer;
+    font-size: 3em;
+    float: right;
+}
+.nav-mobile-wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+.nav-mobile{
+    position: relative;
+    float: left;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+.nav-mobile ul{
+    padding-top: 100px;
+}
+
+.nav-mobile ul li{
+    font-size: 2.25em;
+    list-style: none;
+    padding-left: 50px;
+}
+.nav-mobile li a{
+    color: var(--white);
+    text-decoration: none;
+}
+.nav-mobile li a:hover{
+    text-decoration: underline;
+}
+#menu-toggle{
+    cursor: pointer;
+}
+
 
 
 
@@ -116,21 +167,7 @@ input{
 #menu-toggle a{
     color: var(--white);
 }
-/* .nav-hamburger{
-    background: var(--turquoise);
-    position: relative;
-}
-.nav-hamburger::after{
-    content: "\00D7";
-    font-size: 24px;
-    line-height: 0.65;
-    display: block;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: green;
-} */
+
 .nav-link{
     color: var(--white);
 }
@@ -188,7 +225,7 @@ input{
 
 }
 .recipe-header{
-    background-image: url('./assets/doughnut-bg.jpeg');
+    background-image: url('./assets/images/doughnut-bg.jpeg');
     background-repeat: no-repeat;
     background-position: 5% 5%;
     height: 250px;
@@ -204,7 +241,7 @@ input{
     font-size: 3em;
 }
 .recipes{
-    background: url('./assets/fruit-tart.jpeg');
+    background: url('./assets/images/fruit-tart.jpeg');
     background-size: 100% 100%;
     background-position: center;
     color: var(--dark-blue);
@@ -218,7 +255,7 @@ input{
     background-size: 120% 120%;
 }
 .special{
-    background: url('./assets/macaroon-stack.jpeg');
+    background: url('./assets/images/macaroon-stack.jpeg');
     background-size: 100% 100%;
     background-position: center;
     color: var(--dark-blue);
@@ -232,7 +269,7 @@ input{
     background-size: 120% 120%;
 }
 .menu{
-    background: url('./assets/pink-cupcake-frosting.jpeg');
+    background: url('./assets/images/pink-cupcake-frosting.jpeg');
     background-size: 100% 100%;
     background-position: center;
     color: var(--dark-blue);
@@ -294,24 +331,24 @@ footer{
 }
 #facebook-icon{
     background-repeat:no-repeat;
-    background: url('./assets/facebook.svg')
+    background: url('./assets/images/facebook.svg')
 }
 #facebook-icon:hover{
-    background: url('./assets/facebook-hover.svg')
+    background: url('./assets/images/facebook-hover.svg')
 }
 #pinterest-icon{
     background-repeat:no-repeat;
-    background: url('./assets/pinterest.svg')
+    background: url('./assets/images/pinterest.svg')
 }
 #pinterest-icon:hover{
-    background: url('./assets/pinterest-hover.svg')
+    background: url('./assets/images/pinterest-hover.svg')
 }
 #instagram-icon{
     background-repeat:no-repeat;
-    background: url('./assets/instagram.svg')
+    background: url('./assets/images/instagram.svg')
 }
 #instagram-icon:hover{
-    background: url('./assets/instagram-hover.svg')
+    background: url('./assets/images/instagram-hover.svg')
 }
 .email-signup{
     max-width: 500px;
